@@ -1,0 +1,9 @@
+version: "0.1"
+services:
+  rio_bench:
+    build: .
+    network_mode: "host"
+    environment:
+      - SNAPSHOT_DATE="2023-09-20"
+    volumes:
+       - ./output:/usr/local/src/output
