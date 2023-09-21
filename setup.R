@@ -16,7 +16,6 @@ soft_deps <- c("rio", "openxlsx", "vroom", "readr", "clipr",
     "jsonlite",
     "pzfx",
     "readODS",
-    "rmatio",
     "xml2",
     "yaml",
     "qs",
@@ -28,3 +27,6 @@ reqs <- remotes::system_requirements("ubuntu", "20.04", package = soft_deps)
 z <- lapply(reqs, system) ## install system dependencies
 
 install.packages(soft_deps)
+
+## for unknow reasons, rmatio must be installed on its own
+

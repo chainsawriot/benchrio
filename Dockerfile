@@ -10,6 +10,7 @@ RUN apt-get update \
     libssl-dev \
     libcurl4-openssl-dev \
     libxml2-dev \
+    zlib1g-dev \
     && Rscript setup.R
 
 CMD Rscript bench.R

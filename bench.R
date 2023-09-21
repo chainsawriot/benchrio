@@ -2,9 +2,9 @@ require(rio)
 require(Lahman)
 require(purrr)
 
-rio::install_formats()
-
 roundtrip_formats <- c("csv", "csvy", "xlsx", "r", "xpt", "sav", "zsav", "rds", "rda", "dta", "dump", "dbf", "arff", "parquet", "fst", "feather", "json", "matlab", "qs" ,"ods", "fods", "yaml")
+
+rio::install_formats() ## rmatio 
 
 .test <- function(format, data_sample = Lahman::Batting) {
     message(format)
